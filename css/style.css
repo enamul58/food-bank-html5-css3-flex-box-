@@ -1,0 +1,170 @@
+/* Global Start  */
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+    color: #111;
+}
+img{
+    border-radius: 3px;
+}
+/* Global End  */
+
+/* Header Area Start */
+header {
+    background: hsla(0, 81%, 39%, 0.87);
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+header a {
+    color: #fff;
+}
+#menu li {
+    padding: 10px;
+}
+#logo {
+    margin: 0 auto;
+    font-size: 25px;
+    font-family: -apple-system;
+    font-weight: 700;
+}  
+#social-links li {
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* for mobile & tablet */
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }   
+    #logo{
+        order: -1;
+    }
+}
+/* Header Area End  */
+
+/* Main area   */
+main{
+    display: flex;
+    flex-direction: row;
+}
+aside{
+    padding: 10px;
+    flex: 0 0 20vw;
+    background: hsla(33, 50%, 93%, 0.651);
+}
+aside ul {
+    padding: 0px;
+    list-style: none;
+    margin-bottom: 15px;
+}
+aside ul li a {
+    display: block;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.493);
+    padding: 8px;
+    color: green; 
+    text-shadow: 1px 1px 2px rgba(17, 17, 17, 0.212);
+}
+aside img {
+    width: 100%;
+}
+article{
+    padding: 12px;
+}
+.food-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.food-menu h3 {
+    margin: 8px 0 10px;
+}
+.food-menu p {
+    margin: 0 0 10px;
+}
+.food-item {
+    border: 1px solid #eee;
+    padding: 10px;
+    flex-basis: 32%;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+.call-to-action{
+    align-self: flex-start;
+    margin-top: auto; 
+}
+.call-to-action a {
+    display: block;
+    padding: 8px 10px;
+    background: gray;
+    border: 2px solid transparent;
+    color: #fff;
+    border-radius: 3px;
+}
+.call-to-action a:hover {
+    background: transparent;
+    border: 2px solid gray;
+    color: gray;
+}
+.food-item-img img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    article {
+        order: -1;
+    }
+    .food-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    h2{
+        text-align: center;
+    }
+    aside {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 850px) {
+    
+    aside{
+        flex: 0 0 30vw;
+    }
+    .food-item{
+        flex-basis: 48%;
+    }
+}
+/* Main area End */
+
+/* Footer Start  */
+footer {
+    background: hsla(0, 81%, 39%, 0.87);
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+}
+/* Footer End  */
